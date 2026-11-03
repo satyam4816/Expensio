@@ -1,0 +1,164 @@
+{
+  "passed": [
+    {
+      "name": "Landing Page Title",
+      "detail": "Expensio - Track Smart. Spend Wise."
+    },
+    {
+      "name": "Navbar element exists",
+      "detail": ""
+    },
+    {
+      "name": "FAQ Accordion clicked",
+      "detail": ""
+    },
+    {
+      "name": "Get Started Free link exists to /signup",
+      "detail": ""
+    },
+    {
+      "name": "Signup empty form validation triggered",
+      "detail": "Detected: true"
+    },
+    {
+      "name": "Filled First Name, Last Name, Email, Password, and Confirm Password",
+      "detail": ""
+    },
+    {
+      "name": "Signup fake auth redirected to /app successfully",
+      "detail": "http://localhost:3000/app"
+    },
+    {
+      "name": "localStorage \"expensio:user\" stored correctly",
+      "detail": "{\"name\":\"Sattu Kumar\",\"email\":\"sattu.qa@example.com\"}"
+    },
+    {
+      "name": "Dashboard dynamic greeting displays user name \"Sattu\"",
+      "detail": ""
+    },
+    {
+      "name": "Dashboard financial metric cards rendered",
+      "detail": ""
+    },
+    {
+      "name": "Dashboard BarChart SVG rendered",
+      "detail": ""
+    },
+    {
+      "name": "Entered Amount: 1450",
+      "detail": ""
+    },
+    {
+      "name": "Entered Description: Team Dinner at BBQ Nation",
+      "detail": ""
+    },
+    {
+      "name": "Selected Category: Food",
+      "detail": ""
+    },
+    {
+      "name": "Clicked Save Expense button",
+      "detail": ""
+    },
+    {
+      "name": "Navigation after save",
+      "detail": "http://localhost:3000/app/transactions"
+    },
+    {
+      "name": "Newly added transaction is present in Transactions list",
+      "detail": ""
+    },
+    {
+      "name": "Transactions search filter works for query \"BBQ\"",
+      "detail": ""
+    },
+    {
+      "name": "Insights time range filter pills present",
+      "detail": "5 pills"
+    },
+    {
+      "name": "Insights Charts rendered",
+      "detail": "3 charts found"
+    },
+    {
+      "name": "Switched to Budgets view",
+      "detail": ""
+    },
+    {
+      "name": "Switched back to Goals view",
+      "detail": ""
+    },
+    {
+      "name": "Create Goal modal opened",
+      "detail": ""
+    },
+    {
+      "name": "Filled Goal Name & Target Amount",
+      "detail": ""
+    },
+    {
+      "name": "New goal \"New Camera\" created and displayed",
+      "detail": ""
+    },
+    {
+      "name": "Edit Profile modal opened",
+      "detail": ""
+    },
+    {
+      "name": "Profile name updated to Satyam Kumar",
+      "detail": ""
+    },
+    {
+      "name": "Settings Appearance: switched to Dark theme",
+      "detail": "Dark class present: true"
+    },
+    {
+      "name": "Logout button cleared user session and navigated to /",
+      "detail": "http://localhost:3000/"
+    },
+    {
+      "name": "Password visibility toggle toggles type",
+      "detail": "Input type: text"
+    },
+    {
+      "name": "Navigated to /forgot-password",
+      "detail": ""
+    },
+    {
+      "name": "Forgot password submitted and friendly success card displayed",
+      "detail": ""
+    },
+    {
+      "name": "Login submitted with 800ms loading state and navigated to /app",
+      "detail": "http://localhost:3000/app"
+    },
+    {
+      "name": "Mobile BottomNav active on /app",
+      "detail": "Sidebar hidden, BottomNav visible"
+    },
+    {
+      "name": "Mobile BottomNav active on /app/transactions",
+      "detail": "Sidebar hidden, BottomNav visible"
+    },
+    {
+      "name": "Mobile BottomNav active on /app/add-expense",
+      "detail": "Sidebar hidden, BottomNav visible"
+    },
+    {
+      "name": "Mobile BottomNav active on /app/insights",
+      "detail": "Sidebar hidden, BottomNav visible"
+    },
+    {
+      "name": "Mobile BottomNav active on /app/budget",
+      "detail": "Sidebar hidden, BottomNav visible"
+    },
+    {
+      "name": "Mobile BottomNav active on /app/settings",
+      "detail": "Sidebar hidden, BottomNav visible"
+    }
+  ],
+  "failed": [],
+  "consoleErrors": [],
+  "networkFailures": [],
+  "layoutIssues": []
+}

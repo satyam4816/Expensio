@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #F8F6F0;
+  --surface: #FFFFFF;
+  --surface-alt: #F3EFE6;
+  --border: #E8E4D8;
+  --border-light: #F0EDE4;
+  --text: #19211C;
+  --text-muted: #6E7B71;
+  --primary: #2D5A3C;
+  --primary-hover: #22472F;
+  --primary-light: #E7EFE9;
+  --accent: #34A853;
+  --warning: #F59E0B;
+  --danger: #E05252;
+}
+
+html.dark, .dark {
+  --bg: #0F1511;
+  --surface: #162019;
+  --surface-alt: #1D2A21;
+  --border: #253629;
+  --border-light: #1D2B20;
+  --text: #EEF3EF;
+  --text-muted: #899B8E;
+  --primary: #4B8B61;
+  --primary-hover: #3C7450;
+  --primary-light: #1E3424;
+  --accent: #34D399;
+  --warning: #FBBF24;
+  --danger: #F87171;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif {
+  font-family: 'Lora', 'Playfair Display', Georgia, serif;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 200ms ease-out forwards;
+}
+
+.animate-scale-up {
+  animation: scaleUp 200ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-down {
+  animation: slideDown 250ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(232, 228, 216, 0.7) 0%,
+    rgba(248, 246, 240, 0.9) 50%,
+    rgba(232, 228, 216, 0.7) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.8s infinite ease-in-out;
+}
+
+.dark .animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(37, 54, 41, 0.8) 0%,
+    rgba(50, 72, 55, 0.8) 50%,
+    rgba(37, 54, 41, 0.8) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.8s infinite ease-in-out;
+}
