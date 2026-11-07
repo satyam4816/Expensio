@@ -677,6 +677,18 @@ async function runQA() {
     await page.goto(`${BASE_URL}/app/transactions`, { waitUntil: 'networkidle0' });
     await page.screenshot({ path: path.join(SCREENSHOT_DIR, 'mobile_transactions.png') });
 
+    // ==========================================
+    // TEST 11: 404 Not Found Page
+    // ==========================================
+    console.log('\n--- 11. Testing 404 Not Found Route ---');
+    await page.goto(`${BASE_URL}/non-existent-page-test`, { waitUntil: 'networkidle0' });
+    const notFoundText = await page.evaluate(() => document.body.innerText);
+    if (notFoundText.includes('404') && notFoundText.includes('Page Not Found')) {
+      logPass('404 Not Found page rendered properly for unknown route');
+    } else {
+      logFail('404 page', 'Did not display 404 message');
+    }
+
   } catch (err) {
     console.error('Fatal test runner error:', err);
     logFail('Test Suite Execution', err.stack);

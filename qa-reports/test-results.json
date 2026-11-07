@@ -9,7 +9,11 @@
       "detail": ""
     },
     {
-      "name": "FAQ Accordion clicked",
+      "name": "FAQ Accordion buttons found",
+      "detail": "5 items"
+    },
+    {
+      "name": "FAQ Accordion expands/collapses on click",
       "detail": ""
     },
     {
@@ -155,6 +159,10 @@
     {
       "name": "Mobile BottomNav active on /app/settings",
       "detail": "Sidebar hidden, BottomNav visible"
+    },
+    {
+      "name": "404 Not Found page rendered properly for unknown route",
+      "detail": ""
     }
   ],
   "failed": [],

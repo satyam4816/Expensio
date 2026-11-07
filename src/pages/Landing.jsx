@@ -512,6 +512,7 @@ export function Landing() {
                 <button
                   type="button"
                   onClick={() => setOpenFaq(isOpen ? -1 : index)}
+                  aria-expanded={isOpen}
                   className="w-full p-5 text-left flex items-center justify-between gap-4 font-semibold text-sm text-text"
                 >
                   <span>{faq.q}</span>
